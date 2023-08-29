@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandA - Your Home and Apartments Partner</title>
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="./js/swiper.min.js" defer></script>
+    <script src="./js/swiper-init.js" defer></script>
 </head>
 
 <body>
@@ -72,41 +73,223 @@
                         <button class="btn hero__btn">Sell</button>
                     </div>
                 </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-1 swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./img/hero_1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/hero_2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/hero_3.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/hero_4.jpeg" alt=""></div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <section class="apart">
             <div class="container apart__container">
-                <h2 id="apartments" class="title apart__title">Apartments</h2>
-                <ul class="list-reset apart__list">
+                <span class="hero__subtitle subtitle">(01) I'm looking for: </span>
+                <h2 id="apartments" class="title section__title">Apartments</h2>
+                <div class="swiper swiper-2">
+                    <!-- Additional required wrapper -->
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__category">kaufen</div>
+                            <div class="card apart__item">
+                                <img src="./img/apart-1.jpeg" alt="" class="apart__item-img">
+                                <div class="card__descr">
+                                    <h3 class="title card__title">Haus in Manshousen</h3>
+                                    <div class="card__price">585 000 &euro;</div>
+                                    <div class="card__icons">
+                                        <div class="card__icon card__icon-1"></div>
+                                        <div class="card__icon card__icon-2"></div>
+                                        <div class="card__icon card__icon-3"></div>
+                                        <div class="card__area">
+                                            <div class="card__icon card__icon-4"></div>
+                                            <div class="card__area-m">140 m<sup>2</sup></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__category">kaufen</div>
+                            <div class="card apart__item">
+                                <img src="./img/apart-2.jpeg" alt="" class="apart__item-img">
+                                <div class="card__descr">
+                                    <h3 class="title card__title">Haus in Manshousen</h3>
+
+                                    <div class="card__price">585 000 &euro;</div>
+                                    <div class="card__icons">
+                                        <div class="card__icon card__icon-1"></div>
+                                        <div class="card__icon card__icon-2"></div>
+                                        <div class="card__icon card__icon-3"></div>
+                                        <div class="card__area">
+                                            <div class="card__icon card__icon-4"></div>
+                                            <div class="card__area-m">140 m<sup>2</sup></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__category">kaufen</div>
+                            <div class="card apart__item">
+                                <img src="./img/apart-3.jpeg" alt="" class="apart__item-img">
+                                <div class="card__descr">
+                                    <h3 class="title card__title">Haus in Manshousen</h3>
+                                    <div class="card__price">585 000 &euro;</div>
+                                    <div class="card__icons">
+                                        <div class="card__icon card__icon-1"></div>
+                                        <div class="card__icon card__icon-2"></div>
+                                        <div class="card__icon card__icon-3"></div>
+                                        <div class="card__area">
+                                            <div class="card__icon card__icon-4"></div>
+                                            <div class="card__area-m">140 m<sup>2</sup></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="apart__item--more">
+                                <a class="card__link--more">Show more!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="pagination-2">
+                    <div class="swiper-button-prev btn"></div>
+                    <div class="swiper-button-next btn"></div>
+                </div>
+            </div>
+
+            <!-- <ul class="list-reset apart__list">
                     <li class="card apart__item">
+                        <div class="card__category">kaufen</div>
                         <img src="./img/apart-1.jpeg" alt="" class="apart__item-img">
                         <div class="card__descr">
-                            <div class="title card__title">Haus in Manshousen</div>
+                            <h3 class="title card__title">Haus in Manshousen</h3>
                             <div class="card__price">585 000 &euro;</div>
                             <div class="card__icons">
-                                <div class="card__icon-1"></div>
-                                <div class="card__icon-2"></div>
-                                <div class="card__icon-3"></div>
-                                <div class="card__icon-4"></div>
-                                <div class="card__area">140 m<sup>2</sup></div>
+                                <div class="card__icon card__icon-1"></div>
+                                <div class="card__icon card__icon-2"></div>
+                                <div class="card__icon card__icon-3"></div>
+                                <div class="card__area">
+                                    <div class="card__icon card__icon-4"></div>
+                                    <div class="card__area-m">140 m<sup>2</sup></div>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="card apart__item">
+                        <div class="card__category">kaufen</div>
                         <img src="./img/apart-2.jpeg" alt="" class="apart__item-img">
                         <div class="card__descr">
-                            <div class="title card__title"></div>
-                            <div class="card__price"></div>
+                            <h3 class="title card__title">Haus in Manshousen</h3>
+                            <div class="card__price">585 000 &euro;</div>
                             <div class="card__icons">
-                                <div class="card__icon-1"></div>
-                                <div class="card__icon-2"></div>
-                                <div class="card__icon-3"></div>
-                                <div class="card__icon-4"></div>
-                                <div class="card__area">140 m<sup>2</sup></div>
+                                <div class="card__icon card__icon-1"></div>
+                                <div class="card__icon card__icon-2"></div>
+                                <div class="card__icon card__icon-3"></div>
+                                <div class="card__area">
+                                    <div class="card__icon card__icon-4"></div>
+                                    <div class="card__area-m">140 m<sup>2</sup></div>
+                                </div>
                             </div>
                         </div>
                     </li>
-                </ul>
+                    <li class="card apart__item">
+                        <div class="card__category">kaufen</div>
+                        <img src="./img/apart-3.jpeg" alt="" class="apart__item-img">
+                        <div class="card__descr">
+                            <h3 class="title card__title">Haus in Manshousen</h3>
+                            <div class="card__price">585 000 &euro;</div>
+                            <div class="card__icons">
+                                <div class="card__icon card__icon-1"></div>
+                                <div class="card__icon card__icon-2"></div>
+                                <div class="card__icon card__icon-3"></div>
+                                <div class="card__area">
+                                    <div class="card__icon card__icon-4"></div>
+                                    <div class="card__area-m">140 m<sup>2</sup></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card apart__item">
+                        <div class="card__category">kaufen</div>
+                        <img src="./img/apart-4.jpeg" alt="" class="apart__item-img">
+                        <div class="card__descr">
+                            <h3 class="title card__title">Haus in Manshousen</h3>
+                            <div class="card__price">585 000 &euro;</div>
+                            <div class="card__icons">
+                                <div class="card__icon card__icon-1"></div>
+                                <div class="card__icon card__icon-2"></div>
+                                <div class="card__icon card__icon-3"></div>
+                                <div class="card__area">
+                                    <div class="card__icon card__icon-4"></div>
+                                    <div class="card__area-m">140 m<sup>2</sup></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+        </section>
+        <section class="house">
+            <div class="container house__container">
+                <span class="hero__subtitle subtitle">(02) I'm looking for: </span>
+                <h2 class="title section__title">Houses</h2>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <span class="hero__subtitle subtitle">(03) I'm looking for: </span>
+                <h2 id="apartments" class="title section__title">Gallery</h2>
+
+                <!-- Slider main container -->
+                <div class="swiper swiper-3">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="gallery__slide-name">Astoria</div>
+                            <img src="./img/gallery_1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__slide-name">Astoria</div>
+                            <img src="./img/gallery_3.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__slide-name">Astoria</div>
+                            <img src="./img/gallery_1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__slide-name">Astoria</div>
+                            <img src="./img/gallery_3.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__slide-name">Astoria</div>
+                            <img src="./img/gallery_1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="pagination-3">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

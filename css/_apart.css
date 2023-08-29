@@ -1,20 +1,269 @@
-.apart__title {
+.apart {
+    background-color: var(--spanish);
+}
+
+.apart__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.subtitle {
+    color: var(--black);
+    align-self: flex-start;
+}
+
+.section__title {
     font-size: 128px;
     font-style: normal;
     font-weight: 400;
     line-height: 154px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    align-self: flex-start;
 }
 
-.apart__list {
+.swiper-2 {
+    width: 100%;
+    height: 100%;
+    /* overflow: visible; */
+}
+
+.swiper-2 .swiper-wrapper {
+    align-content: stretch;
+}
+
+.swiper-2 .swiper-slide {
+    overflow: visible;
+    flex-grow: 1;
+    height: auto;
+    position: relative;
+    padding: 30px;
+}
+
+.swiper-2 .card {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* .apart__list {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding: 0 50px;
+} */
+
+.pagination-2 {
+    position: absolute;
+    top: 65%;
+    /* left: -25px; */
+    width: 92%;
+    /* margin: auto 0; */
+    transform: translateY(-50%);
+    /* pointer-events: none; */
 }
 
-.apart__item {
-    position: relative;
+.pagination-2 .btn {
+    border-radius: 50%;
+    padding: 35px;
+}
+
+.pagination-2 .btn::after {
+    color: var(--PR-baltic);
+    transition: color .3s ease;
+}
+
+.pagination-2 .swiper-button-prev::after {
+    color: var(--PR-baltic);
+    transition: color .3s ease;
+    transform: translateX(-3px);
+}
+
+.pagination-2 .swiper-button-next::after {
+    transform: translateX(3px);
+}
+
+.pagination-2 .btn:hover::after {
+    color: var(--pupkin);
+}
+
+.card {
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0 0 15px 3px var(--sc-light-gray);
+    transition: transform .3s ease,
+        box-shadow .3s ease;
+    ;
     height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 5px var(--sc-light-gray);
+}
+
+.card__category {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.apart__item-img {
+    object-fit: contain;
+    margin: 0;
+}
+
+.card__descr {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card__title {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card__price {
+    border-top: solid var(--sc-light-gray) 1px;
+    border-bottom: solid var(--sc-light-gray) 1px;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.card__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card__icon {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card__icon-1 {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z' stroke='%237D7d7d' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.card__icon-2 {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.826 6.07601C11.4937 6.38186 10.5 7.57488 10.5 9V9.75H16.5V9C16.5 7.6504 15.6088 6.50894 14.3828 6.132C14.6183 5.61186 15.1419 5.25 15.75 5.25C16.5784 5.25 17.25 5.92157 17.25 6.75L17.25 12.75H4.5V14.25H5.25L5.25 18C5.25 19.2426 6.25736 20.25 7.5 20.25L16.5 20.25C17.7426 20.25 18.75 19.2426 18.75 18V14.25H19.5V12.75H18.75L18.75 6.75C18.75 5.09315 17.4069 3.75 15.75 3.75C14.3249 3.75 13.1319 4.7437 12.826 6.07601ZM6.75 14.25H17.25V18C17.25 18.4142 16.9142 18.75 16.5 18.75L7.5 18.75C7.08579 18.75 6.75 18.4142 6.75 18L6.75 14.25ZM13.5 7.5C14.0552 7.5 14.54 7.80165 14.7993 8.25H12.2007C12.46 7.80165 12.9448 7.5 13.5 7.5Z' fill='%237D7d7d'/%3E%3C/svg%3E");
+}
+
+.card__icon-3 {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 17H16M8 17C8 18.1046 7.10457 19 6 19C4.89543 19 4 18.1046 4 17M8 17C8 15.8954 7.10457 15 6 15C4.89543 15 4 15.8954 4 17M16 17C16 18.1046 16.8954 19 18 19C19.1046 19 20 18.1046 20 17M16 17C16 15.8954 16.8954 15 18 15C19.1046 15 20 15.8954 20 17M10 5V11M4 11L4.33152 9.01088C4.56901 7.58593 4.68776 6.87345 5.0433 6.3388C5.35671 5.8675 5.79705 5.49447 6.31346 5.26281C6.8993 5 7.6216 5 9.06621 5H12.4311C13.3703 5 13.8399 5 14.2662 5.12945C14.6436 5.24406 14.9946 5.43194 15.2993 5.68236C15.6435 5.96523 15.904 6.35597 16.425 7.13744L19 11M4 17H3.6C3.03995 17 2.75992 17 2.54601 16.891C2.35785 16.7951 2.20487 16.6422 2.10899 16.454C2 16.2401 2 15.9601 2 15.4V14.2C2 13.0799 2 12.5198 2.21799 12.092C2.40973 11.7157 2.71569 11.4097 3.09202 11.218C3.51984 11 4.0799 11 5.2 11H17.2C17.9432 11 18.3148 11 18.6257 11.0492C20.3373 11.3203 21.6797 12.6627 21.9508 14.3743C22 14.6852 22 15.0568 22 15.8C22 15.9858 22 16.0787 21.9877 16.1564C21.9199 16.5843 21.5843 16.9199 21.1564 16.9877C21.0787 17 20.9858 17 20.8 17H20' stroke='%237D7d7d' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.card__icon-4 {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V8M4 11V13M4 16V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H8M11 20H13M16 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V16M20 13V11M20 8V7.2C20 6.0799 20 5.51984 19.782 5.09202C19.5903 4.71569 19.2843 4.40973 18.908 4.21799C18.4802 4 17.9201 4 16.8 4H16M13 4H11' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    margin-right: 5px;
+}
+
+.card__area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card__area-m {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aprt__btn {
+    align-self: center;
+}
+
+.apart__item--more {
+    background-image: url('../img/apart-2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.apart__item--more {
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease,
+        box-shadow .3s ease;
+    height: 100%;
+    box-shadow: 0 0 15px 3px var(--sc-light-gray);
+}
+
+.card__link--more {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color .4s ease;
+}
+
+.card__link--more::before {
+    content: "";
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__link--more::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: solid 2px var(--white);
+    border-left: solid 2px var(--white);
+    transform: rotate(-225deg);
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    right: -5px;
+    transition: transform .5s ease,
+        border-color .5s ease;
+}
+
+.card__link--more:hover::after {
+    transform: translateX(15px) rotate(-225deg);
+}
+
+.apart__item--more:has(.card__link--more:hover) {
+    box-shadow: 0 0 25px 5px var(--pupkin)
 }

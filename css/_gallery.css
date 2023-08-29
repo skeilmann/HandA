@@ -1,0 +1,12 @@
+.pagination-3 .swiper-button-next,
+.pagination-3 .swiper-button-prev {
+    color: white;
+}
+
+.gallery__slide-name {
+    position: absolute;
+    left: -40px;
+    top: 75%;
+    color: white;
+    font-size: 70px;
+}
