@@ -128,12 +128,6 @@
     margin-right: 50px;
 }
 
-.lang {
-    /* margin-left: auto; */
-    /* display: flex; */
-    /* flex-direction: column; */
-}
-
 .lang__flags {
     display: flex;
     gap: 10px;
