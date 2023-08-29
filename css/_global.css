@@ -9,8 +9,10 @@
 
 
 body {
-    font-family: '', sans-serif;
+    font-family: 'Muller', sans-serif;
     font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.54px;
 }
 
 img {
@@ -26,8 +28,12 @@ img {
 .btn-reset {
     padding: 0;
     border: none;
-    background-color: transparent;
     cursor: pointer;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
 }
 
 .visually-hidden {
