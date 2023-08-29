@@ -162,15 +162,15 @@
 }
 
 .flag-de {
-    background-image: url('../img/fleg_DEU.svg')
+    background-image: url('../img/icons/fleg_DEU.svg')
 }
 
 .flag-us {
-    background-image: url('../img/flag-US.svg')
+    background-image: url('../img/icons/flag-US.svg')
 }
 
 .flag-ua {
-    background-image: url('../img/flag-UA.svg')
+    background-image: url('../img/icons/flag-UA.svg')
 }
 
 .nav__link {
