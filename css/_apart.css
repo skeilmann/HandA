@@ -1,0 +1,20 @@
+.apart__title {
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154px;
+}
+
+.apart__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.apart__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

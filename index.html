@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandA - Your Home and Apartments Partner</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container">
             <div class="header__container-1">
-                <span class="header__subtitle">Call us </span>
-                <a href="tel:+40733570552">+40733570552</a>
-                <span class="header__subtitle">Email us </span>
-                <a href="mailto:gheorghe91@hotmail.com">gheorghe91@hotmail.com</a>
+                <div class="header__links">
+                    <a href="tel:+40733570552" class="link header__link header__link-phone">Call us +40733570552</a>
+                    <a href="mailto:gheorghe91@hotmail.com" class=" link header__link header__link-email">Email us
+                        gheorghe91@hotmail.com</a>
+                </div>
+                <button class="btn-reset btn btn-header">
+                    Log in
+                </button>
             </div>
             <div class="header__container-2">
                 <a class="logo header__logo">
@@ -24,27 +29,32 @@
                 <nav class="nav">
                     <ul class="nav__list list-reset">
                         <li class="nav__item">
-                            <a href="#apartments" class="nav__link">Apartments</a>
+                            <a href="#apartments" class="link nav__link">Apartments</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#renovation" class="nav__link">Renovation</a>
+                            <a href="#renovation" class="link nav__link">Renovation</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#find" class="nav__link">Find us</a>
+                            <a href="#find" class="link nav__link">Find us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact us</a>
+                            <a href="#contact" class="link nav__link">Contact us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About us</a>
+                            <a href="#about" class="link nav__link">About us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#fav" class="nav__link">Favorites</a>
+                            <a href="#fav" class="link nav__link">Favorites</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="lang">
-                    <span class="header__lang"> Choose prefered language</span>
+                    <!-- <span class="header__lang"> Choose prefered language</span> -->
+                    <div class="lang__flags">
+                        <div class="flag flag-de"></div>
+                        <div class="flag flag-us"></div>
+                        <div class="flag flag-ua"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,14 +63,50 @@
     <main>
         <section class="hero">
             <div class="container hero__container">
-                <span class="hero__subtitle">HandA - we are here to help you to </span>
-                <h1 class="title hero__title">Discover Quality Homes and Apartments</h1>
-                <div class="hero__nav">
-                    <button href="#" class="hero__btn">Renovate</button>
-                    <button href="#" class="hero__btn">Buy</button>
-                    <button href="#" class="hero__btn">Sell</button>
-
+                <div class="hero__article">
+                    <span class="hero__subtitle">HandA - we are here to help you to </span>
+                    <h1 class="title hero__title">Discover Quality Homes and Apartments</h1>
+                    <div class="hero__nav">
+                        <button class="btn hero__btn">Renovate</button>
+                        <button class="btn hero__btn">Buy</button>
+                        <button class="btn hero__btn">Sell</button>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="apart">
+            <div class="container apart__container">
+                <h2 id="apartments" class="title apart__title">Apartments</h2>
+                <ul class="list-reset apart__list">
+                    <li class="card apart__item">
+                        <img src="./img/apart-1.jpeg" alt="" class="apart__item-img">
+                        <div class="card__descr">
+                            <div class="title card__title">Haus in Manshousen</div>
+                            <div class="card__price">585 000 &euro;</div>
+                            <div class="card__icons">
+                                <div class="card__icon-1"></div>
+                                <div class="card__icon-2"></div>
+                                <div class="card__icon-3"></div>
+                                <div class="card__icon-4"></div>
+                                <div class="card__area">140 m<sup>2</sup></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card apart__item">
+                        <img src="./img/apart-2.jpeg" alt="" class="apart__item-img">
+                        <div class="card__descr">
+                            <div class="title card__title"></div>
+                            <div class="card__price"></div>
+                            <div class="card__icons">
+                                <div class="card__icon-1"></div>
+                                <div class="card__icon-2"></div>
+                                <div class="card__icon-3"></div>
+                                <div class="card__icon-4"></div>
+                                <div class="card__area">140 m<sup>2</sup></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

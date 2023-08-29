@@ -1,8 +1,18 @@
-.hero__container {
+.hero {
     background-image: url(/img/here_1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+}
+
+.hero__container {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    po
+}
+
+.hero__article {
     display: flex;
     flex-direction: column;
 }
@@ -25,24 +35,17 @@
     font-weight: 700;
     line-height: 120px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .hero__nav {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     margin-top: auto;
-}
-
-.hero__btn {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 24px;
-    padding: 24px 32px;
-    color: var(--white);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    border: none;
+    padding: 24px 50px;
+    border-radius: 23px;
+    align-self: center;
 }
