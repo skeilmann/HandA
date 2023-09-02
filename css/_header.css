@@ -1,30 +1,39 @@
 .header {
     position: sticky;
-    z-index: 10;
+    z-index: 100;
     top: 0;
     background-color: var(--white);
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, .7);
 }
 
 .header__container {
     display: flex;
     align-items: center;
-    flex-direction: column;
     padding: 20px 60px;
+}
+
+.header__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     gap: 20px;
 }
 
 .header__container-1 {
     display: flex;
-    flex-direction: row;
     align-self: flex-end;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+.logo {
+    height: 70px;
+}
+
 .link {
-    text-decoration: none;
     color: var(--PR-baltic);
+    text-decoration: none;
     transition: color .3s ease;
 }
 
@@ -45,11 +54,11 @@
     display: inline-block;
     width: 25px;
     height: 15px;
+    vertical-align: top;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: background-image 0.3s ease,
-        transform 0.3s ease;
-    vertical-align: top;
+    transition: background-image .3s ease,
+        transform .3s ease;
 }
 
 .header__link-phone::before {
@@ -70,16 +79,14 @@
     transform: scale(1.2) rotate(10deg);
 }
 
-
 .btn-header {
     margin-left: auto;
     padding: 5px;
     padding-left: 19px;
     border: none;
-    white-space: nowrap;
     border-radius: 10px;
+    white-space: nowrap;
     /* border: solid 1px var(--pupkin); */
-
 }
 
 .btn:hover {
@@ -94,12 +101,12 @@
     display: inline-block;
     width: 14px;
     height: 14px;
+    vertical-align: text-top;
     background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z' fill='black'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image .3s,
         transform .3s ease;
-    vertical-align: text-top;
 }
 
 .btn-header:hover::before {
@@ -109,8 +116,8 @@
 
 .header__container-2 {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header__logo {
@@ -124,47 +131,51 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
     margin-right: 50px;
+
+    gap: 30px;
 }
 
 .lang__flags {
-    display: flex;
-    gap: 10px;
     position: relative;
+    display: flex;
     justify-content: center;
+
+    gap: 10px;
 }
 
 .flag {
     content: "";
     width: 27px;
     height: 23px;
+    border-radius: 3px;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     transition: transform .2s;
-    background-position: center;
-    border-radius: 3px;
-    filter: grayscale(1);
     transition: box-shadow .3s ease,
         filter .3s ease;
+
+    filter: grayscale(1);
 }
 
 .flag:hover {
     /* transform: scale(1.2); */
-    box-shadow: 0 0 5px 1px #FE7B1E;
+    box-shadow: 0 0 5px 3px var(--pupkin);
+
     filter: grayscale(0);
 }
 
 .flag-de {
-    background-image: url('../img/icons/fleg_DEU.svg')
+    background-image: url("../img/icons/fleg_DEU.svg");
 }
 
 .flag-us {
-    background-image: url('../img/icons/flag-US.svg')
+    background-image: url("../img/icons/flag-US.svg");
 }
 
 .flag-ua {
-    background-image: url('../img/icons/flag-UA.svg')
+    background-image: url("../img/icons/flag-UA.svg");
 }
 
 .nav__link {

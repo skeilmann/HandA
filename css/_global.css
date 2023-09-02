@@ -46,7 +46,8 @@ img {
     background-color: var(--white);
     color: var(--PR-baltic);
     transition: box-shadow .5s ease,
-        color .3s ease;
+        color .3s ease,
+        background-color .3s ease;
 }
 
 .title {

@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--PR-baltic);
+    color: var(--white);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footer__section:not(:first-child) {
+    display: flex;
+    align-items: center;
+    gap: 106px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__link {
+    color: var(--white);
+}
+
+.footer__section_down {
+    color: var(--sc-light-gray);
+}
