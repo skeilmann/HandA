@@ -30,8 +30,8 @@ const swiper2 = new Swiper('.swiper-2', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.next-2',
+        prevEl: '.prev-2',
     },
 });
 
@@ -43,9 +43,9 @@ const swiper3 = new Swiper('.swiper-3', {
     loop: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    slidesPerView: 1.3,
+    slidesPerView: 1.7,
     slidesPerGroup: 1,
-    spaceBetween: 100,
+    spaceBetween: 150,
 
     // If we need pagination
     pagination: {
@@ -54,7 +54,7 @@ const swiper3 = new Swiper('.swiper-3', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.next-3',
+        prevEl: '.prev-3',
     },
 });

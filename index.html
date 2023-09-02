@@ -30,6 +30,9 @@
                 <nav class="nav">
                     <ul class="nav__list list-reset">
                         <li class="nav__item">
+                            <a href="#about" class="link nav__link">About us</a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#apartments" class="link nav__link">Apartments</a>
                         </li>
                         <li class="nav__item">
@@ -40,9 +43,6 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="link nav__link">Contact us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="link nav__link">About us</a>
                         </li>
                         <li class="nav__item">
                             <a href="#fav" class="link nav__link">Favorites</a>
@@ -87,10 +87,25 @@
 
             </div>
         </section>
-        <section class="apart">
+
+        <section id="about" class="about">
+            <div class="container">
+                <span class="hero__subtitle subtitle">(00) Who we are </span>
+                <h2 class="title section__title">About us</h2>
+                <p class="about__descr">At IMMO GOLD GmbH, we breathe life into spaces. As a dynamic real estate
+                    agency, we specialize in the art of transforming houses and apartments into cherished homes. With a
+                    passion for real estate, our team is dedicated to curating exceptional buying
+                    and selling experiences. From securing the perfect property to orchestrating renovations that bring
+                    dreams to reality, we pride ourselves on turning every transaction into a golden opportunity.
+                    Discover the essence of fine living with IMMO GOLD GmbH – where properties are more than just
+                    spaces, they're legacies.</p>
+            </div>
+        </section>
+
+        <section id="apartments" class="apart">
             <div class="container apart__container">
                 <span class="hero__subtitle subtitle">(01) I'm looking for: </span>
-                <h2 id="apartments" class="title section__title">Apartments</h2>
+                <h2 class="title section__title">Apartments</h2>
                 <div class="swiper swiper-2">
                     <!-- Additional required wrapper -->
 
@@ -162,87 +177,13 @@
                     </div>
 
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
                 <!-- If we need navigation buttons -->
                 <div class="pagination-2">
-                    <div class="swiper-button-prev btn"></div>
-                    <div class="swiper-button-next btn"></div>
+                    <div class="swiper-button-prev prev-2 btn"></div>
+                    <div class="swiper-button-next next-2 btn"></div>
                 </div>
             </div>
 
-            <!-- <ul class="list-reset apart__list">
-                    <li class="card apart__item">
-                        <div class="card__category">kaufen</div>
-                        <img src="./img/apart-1.jpeg" alt="" class="apart__item-img">
-                        <div class="card__descr">
-                            <h3 class="title card__title">Haus in Manshousen</h3>
-                            <div class="card__price">585 000 &euro;</div>
-                            <div class="card__icons">
-                                <div class="card__icon card__icon-1"></div>
-                                <div class="card__icon card__icon-2"></div>
-                                <div class="card__icon card__icon-3"></div>
-                                <div class="card__area">
-                                    <div class="card__icon card__icon-4"></div>
-                                    <div class="card__area-m">140 m<sup>2</sup></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card apart__item">
-                        <div class="card__category">kaufen</div>
-                        <img src="./img/apart-2.jpeg" alt="" class="apart__item-img">
-                        <div class="card__descr">
-                            <h3 class="title card__title">Haus in Manshousen</h3>
-                            <div class="card__price">585 000 &euro;</div>
-                            <div class="card__icons">
-                                <div class="card__icon card__icon-1"></div>
-                                <div class="card__icon card__icon-2"></div>
-                                <div class="card__icon card__icon-3"></div>
-                                <div class="card__area">
-                                    <div class="card__icon card__icon-4"></div>
-                                    <div class="card__area-m">140 m<sup>2</sup></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card apart__item">
-                        <div class="card__category">kaufen</div>
-                        <img src="./img/apart-3.jpeg" alt="" class="apart__item-img">
-                        <div class="card__descr">
-                            <h3 class="title card__title">Haus in Manshousen</h3>
-                            <div class="card__price">585 000 &euro;</div>
-                            <div class="card__icons">
-                                <div class="card__icon card__icon-1"></div>
-                                <div class="card__icon card__icon-2"></div>
-                                <div class="card__icon card__icon-3"></div>
-                                <div class="card__area">
-                                    <div class="card__icon card__icon-4"></div>
-                                    <div class="card__area-m">140 m<sup>2</sup></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card apart__item">
-                        <div class="card__category">kaufen</div>
-                        <img src="./img/apart-4.jpeg" alt="" class="apart__item-img">
-                        <div class="card__descr">
-                            <h3 class="title card__title">Haus in Manshousen</h3>
-                            <div class="card__price">585 000 &euro;</div>
-                            <div class="card__icons">
-                                <div class="card__icon card__icon-1"></div>
-                                <div class="card__icon card__icon-2"></div>
-                                <div class="card__icon card__icon-3"></div>
-                                <div class="card__area">
-                                    <div class="card__icon card__icon-4"></div>
-                                    <div class="card__area-m">140 m<sup>2</sup></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul> -->
-            </div>
         </section>
         <section class="house">
             <div class="container house__container">
@@ -250,44 +191,45 @@
                 <h2 class="title section__title">Houses</h2>
             </div>
         </section>
-        <section class="gallery">
-            <div class="container">
+        <section id="gallery" class="gallery">
+            <div class="container gallery__container">
                 <span class="hero__subtitle subtitle">(03) I'm looking for: </span>
-                <h2 id="apartments" class="title section__title">Gallery</h2>
+                <h2 class="title section__title">Gallery</h2>
 
-                <!-- Slider main container -->
-                <div class="swiper swiper-3">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="gallery__slide-name">Astoria</div>
-                            <img src="./img/gallery_1.jpeg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery__slide-name">Astoria</div>
-                            <img src="./img/gallery_3.jpeg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery__slide-name">Astoria</div>
-                            <img src="./img/gallery_1.jpeg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery__slide-name">Astoria</div>
-                            <img src="./img/gallery_3.jpeg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="gallery__slide-name">Astoria</div>
-                            <img src="./img/gallery_1.jpeg" alt="">
+                <div class="gallery__swiper-wrap">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="gallery__slide-name">Astoria</div>
+                                <img class="gallery__img" src="./img/gallery_1.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery__slide-name">Astoria</div>
+                                <img class="gallery__img" src="./img/gallery_3.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery__slide-name">Astoria</div>
+                                <img class="gallery__img" src="./img/gallery_1.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery__slide-name">Astoria</div>
+                                <img class="gallery__img" src="./img/gallery_3.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery__slide-name">Astoria</div>
+                                <img class="gallery__img" src="./img/gallery_1.jpeg" alt="">
+                            </div>
                         </div>
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
+                    <div class="swiper-pagination pagination-3"></div>
                     <!-- If we need navigation buttons -->
-                    <div class="pagination-3">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="navigation-3">
+                        <div class="swiper-button-prev btn prev-3"></div>
+                        <div class="swiper-button-next btn next-3"></div>
                     </div>
                 </div>
             </div>

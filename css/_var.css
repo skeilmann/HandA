@@ -7,10 +7,12 @@
     --sc-light-gray: #999999;
     --white: #ffffff;
     --white2: #fafafa;
-    --pupkin: #FE7B1E;
+    /* --pupkin: #FE7B1E; */
+    --pupkin: #bfa76b;
     --apache: #E0BB68;
     --spanish: #DFD8BF;
     --merino: #F4F1E7;
+    --gold: #bfa76b;
 
     /*fonts*/
     --def-fs:
