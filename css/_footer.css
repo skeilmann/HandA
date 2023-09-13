@@ -8,7 +8,17 @@
     flex-direction: column;
     gap: 80px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.footer__section_up {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__logo-desc {
+    order: 5;
 }
 
 .footer__section:not(:first-child) {

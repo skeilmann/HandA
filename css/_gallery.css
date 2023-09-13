@@ -40,3 +40,28 @@
         width: calc(100% + 90px);
     }
 }
+
+@media (width < 760px) {
+    .gallery .pagination-3 {
+        bottom: 15px;
+    }
+}
+
+@media (width < 600px) {
+    .swiper-3 .swiper-wrapper {
+        padding-left: 0;
+    }
+
+    .navigation-3 {
+        position: relative;
+        max-width: 320px;
+        left: 0;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .gallery__slide-name {
+        font-size: 40px;
+        left: 20px;
+    }
+}

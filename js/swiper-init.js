@@ -17,16 +17,11 @@ const swiper1 = new Swiper('.swiper-1', {
 const swiper2 = new Swiper('.swiper-2', {
     direction: 'horizontal',
     spaceBetween: 10,
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     watchSlidesVisibility: false,
     watchSlidesProgress: false,
     loop: false,
-
-    // If we need pagination
-    pagination: {
-        el: '.pagination-3',
-    },
 
     // Navigation arrows
     navigation: {
@@ -35,9 +30,6 @@ const swiper2 = new Swiper('.swiper-2', {
     },
 
     breakpoints: {
-        400: {
-            slidesPerView: 1,
-        },
         900: {
             slidesPerView: 2,
         },
@@ -56,7 +48,7 @@ const swiper3 = new Swiper('.swiper-3', {
     loop: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    slidesPerView: 1.7,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 150,
 
@@ -72,9 +64,6 @@ const swiper3 = new Swiper('.swiper-3', {
     },
 
     breakpoints: {
-        400: {
-            slidesPerView: 1,
-        },
         900: {
             slidesPerView: 1.3,
             spaceBetween: 100,

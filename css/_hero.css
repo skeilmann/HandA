@@ -92,3 +92,28 @@
         line-height: 100px;
     }
 }
+
+@media (width < 760px) {
+    .hero__title {
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
+
+@media (width < 600px) {
+    .hero__nav {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero__btn:first-child {
+        width: 100%;
+    }
+
+    .hero__btn:not(:first-child) {
+        flex-grow: 1;
+    }
+}
