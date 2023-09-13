@@ -164,3 +164,17 @@
     outline: 1px solid var(--acc-col);
     outline-offset: 5px;
 }
+
+@media (width < 1040px) {
+    .contact__descr {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (width < 760px) {
+    .contact__descr {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

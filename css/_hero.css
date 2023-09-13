@@ -85,3 +85,10 @@
     border-radius: 23px;
     align-self: center;
 }
+
+@media (width < 1040px) {
+    .hero__title {
+        font-size: 80px;
+        line-height: 100px;
+    }
+}

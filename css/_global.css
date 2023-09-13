@@ -73,3 +73,9 @@ img {
     margin: 0 auto;
     padding: 120px 135px;
 }
+
+@media (width < 1040px) {
+    .container {
+        padding: 80px 60px;
+    }
+}

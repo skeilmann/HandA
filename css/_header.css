@@ -29,6 +29,7 @@
 
 .logo {
     height: 70px;
+    object-fit: contain;
 }
 
 .link {
@@ -38,7 +39,9 @@
 }
 
 .header__links {
-    padding-top: 4px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .header__link:hover {
@@ -120,6 +123,10 @@
     width: 100%;
 }
 
+.header__container-2 .btn-header {
+    display: none;
+}
+
 .header__logo {
     /* flex-shrink: 0; */
     /* width: 224px; */
@@ -132,15 +139,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-right: 50px;
-
     gap: 30px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
 }
 
 .lang__flags {
     position: relative;
     display: flex;
     justify-content: center;
-
     gap: 10px;
 }
 
@@ -202,4 +212,94 @@
 .nav__link:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (width < 1040px) {
+    .header__container {
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+
+    .header__logo {
+        order: 1;
+        margin: 0;
+    }
+
+    .header__wrap {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__container-1 {
+        justify-content: center;
+    }
+
+    .header__container-2 {
+        width: unset;
+    }
+
+    .header__container-1 .btn-header {
+        display: none;
+    }
+
+    .header__container-2 .btn-header {
+        display: inline-block;
+    }
+
+    .header__nav {
+        position: absolute;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100vw;
+        height: calc(100vh + 10px);
+        padding: 100px 50px 50px;
+        opacity: 0;
+        background-color: rgb(255, 255, 255, 0.9);
+        transition: transform .3s;
+        transform: translateX(-100%);
+    }
+
+    .header__nav.show--menu {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header__nav .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 63px;
+        flex-wrap: nowrap;
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .nav__item:last-child {
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .header__container {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .header__container-1 {
+        display: none;
+    }
+
+    .header__container {
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .header__wrap {
+        width: unset;
+    }
 }

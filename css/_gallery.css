@@ -9,7 +9,7 @@
 .gallery__slide-name {
     position: absolute;
     left: -70px;
-    top: 75%;
+    bottom: 10%;
     color: white;
     font-size: 70px;
     mix-blend-mode: difference;
@@ -30,38 +30,13 @@
     background: var(--PR-baltic);
 }
 
-.navigation-3 {
-    position: absolute;
-    top: 50%;
-    left: -70px;
-    width: calc(100% + 140px);
-    /* transform: translateY(-50%); */
-}
-
-.navigation-3 .btn {
-    padding: 35px;
-    border-radius: 50%;
-}
-
-.navigation-3 .btn::after {
-    color: var(--PR-baltic);
-    transition: color .3s ease;
-}
-
-.navigation-3 .prev-3::after {
-    color: var(--PR-baltic);
-    transition: color .3s ease;
-    transform: translateX(-3px);
-}
-
-.navigation-3 .next-3::after {
-    transform: translateX(3px);
-}
-
-.navigation-3 .btn:hover::after {
-    color: var(--pupkin);
-}
-
 .swiper-3 .swiper-wrapper {
     padding-left: 80px;
+}
+
+@media (width < 1040px) {
+    .navigation-3 {
+        left: -45px;
+        width: calc(100% + 90px);
+    }
 }

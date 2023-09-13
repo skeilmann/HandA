@@ -25,7 +25,7 @@ const swiper2 = new Swiper('.swiper-2', {
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-3',
     },
 
     // Navigation arrows
@@ -33,6 +33,19 @@ const swiper2 = new Swiper('.swiper-2', {
         nextEl: '.next-2',
         prevEl: '.prev-2',
     },
+
+    breakpoints: {
+        400: {
+            slidesPerView: 1,
+        },
+        900: {
+            slidesPerView: 2,
+        },
+        1350: {
+            slidesPerView: 3,
+        },
+    }
+
 });
 
 
@@ -57,4 +70,18 @@ const swiper3 = new Swiper('.swiper-3', {
         nextEl: '.next-3',
         prevEl: '.prev-3',
     },
+
+    breakpoints: {
+        400: {
+            slidesPerView: 1,
+        },
+        900: {
+            slidesPerView: 1.3,
+            spaceBetween: 100,
+        },
+        1350: {
+            slidesPerView: 1.5,
+            spaceBetween: 150,
+        },
+    }
 });

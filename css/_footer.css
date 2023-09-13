@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer__section:not(:first-child) {
@@ -27,4 +29,5 @@
 
 .footer__section_down {
     color: var(--sc-light-gray);
+    justify-content: center;
 }
