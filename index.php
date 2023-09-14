@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMMO Gold - Your Home and Apartments Partner</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <?php include_once './css/style.css'; ?>
     <link href="./img/favicon.png" rel="icon" type="image/svg+xml" />
     <script src="./js/swiper.min.js" defer></script>
     <script src="./js/swiper-init.js" defer></script>
