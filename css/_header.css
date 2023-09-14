@@ -284,7 +284,7 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     .header__container {
         justify-content: space-between;
         gap: 0;
@@ -302,5 +302,18 @@
 
     .header__wrap {
         width: unset;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .lang__flags {
+        gap: 5px;
+    }
+
+    .flag {
+        width: 20px;
+        height: 17px;
     }
 }

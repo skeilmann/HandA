@@ -204,8 +204,11 @@
     flex-wrap: nowrap;
 }
 
-.card__icon-wrap.active .card__icon-text {
+.card__icon-text {
     font-size: 18px;
+}
+
+.card__icon-wrap.active .card__icon-text {
     font-weight: bold;
 }
 
@@ -297,11 +300,32 @@
 }
 
 @media (width < 760px) {
+    .subtitle {
+        font-size: small;
+    }
+
     .section__title {
         font-size: 60px;
         line-height: 80px;
     }
 
+    .card__title {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .card__price {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .card__icon-text {
+        font-size: 14px;
+    }
+
+}
+
+@media (width < 600px) {
     .navigation-2 {
         position: relative;
         margin: 30px 0 10px;
@@ -325,6 +349,11 @@
 }
 
 @media (width < 450px) {
+    .section__title {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
     .swiper-2 .swiper-slide {
         padding: 5px;
     }

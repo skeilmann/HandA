@@ -41,3 +41,13 @@
     color: var(--sc-light-gray);
     justify-content: center;
 }
+
+@media (width < 600px) {
+    .footer__container {
+        gap: 40px;
+    }
+
+    footer .footer__list:not(:nth-child(3)) {
+        display: none;
+    }
+}
